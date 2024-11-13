@@ -13,7 +13,7 @@ const ShimmerCard = () => (
 );
 
 const RecipePage = () => {
-  const { data, loading, error } = useFetch(`/api/recipes`);
+  const { data, loading, error } = useFetch(`https://food-nutritientapp.onrender.com/api/recipes`);
   const [recipesData, setRecipesData] = useState([]);
   const [selectedRecipe, setSelectedRecipe] = useState(null);
   useEffect(() => {

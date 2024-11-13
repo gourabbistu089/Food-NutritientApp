@@ -16,7 +16,7 @@ const IngredientsPage = () => {
   const [ingredients, setIngredients] = useState([]);
   const [selectedIngredient, setSelectedIngredient] = useState(null);
 
-  const {data, loading, error} = useFetch('/api/ingredients');
+  const {data, loading, error} = useFetch('https://food-nutritientapp.onrender.com/api/ingredients');
 
   useEffect(() => {
     if (data) {
