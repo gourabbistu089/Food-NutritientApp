@@ -26,7 +26,7 @@ const ShimmerCard = () => {
   );
 };
 const BlogPage = () => {
-  const {loading, error, data} = useFetch('/api/blog');
+  const {loading, error, data} = useFetch('https://food-nutritientapp.onrender.com/api/blog');
   const [blogPost, setBlogPost] = useState([]);
 
   useEffect(() => {
